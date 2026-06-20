@@ -1,12 +1,7 @@
-*.bak/
-*.ini
-*.pyc
-model_*
-predict_*
-.Rhistory
-loss_*
-test_predictions.csv
-.spyproject/
-
-# Compiled python files
-*.py[oc]
+dev.zip
+train_sample/
+__pycache__/
+*.laz
+model_weights/
+output/
+.predict.py.swp

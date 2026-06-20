@@ -32,5 +32,5 @@ def read_las(path_las):
     # return numpy array
     #data = pipeline.arrays[0]
     data = laspy.read(path_las)
-    return np.column_stack((data.X, data.Y, data.Z))
+    return np.column_stack((data.x, data.y, data.z)).astype(np.float32)
 

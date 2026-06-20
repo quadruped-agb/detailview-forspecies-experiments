@@ -59,7 +59,7 @@ def run_predict(
         print(f"[{datetime.now().strftime('%H:%M:%S')}] Model path {model_path} does not exist or was not supplied. Downloading example model...")
         import requests
         response = requests.get("https://freidata.uni-freiburg.de/records/xw42t-6mt03/files/model_202305171452_60?download=1")
-        model_path = "/model_202305171452_60"
+        model_path = "./model_202305171452_60"
         with open(model_path, 'wb') as f:
             f.write(response.content)
 
@@ -72,14 +72,14 @@ def run_predict(
         train_height_sd = 9.5494
         print(f"[{datetime.now().strftime('%H:%M:%S')}] No training data: using default tree height scaling values for inference.")
 
-    os.environ["OMP_NUM_THREADS"] = "12"
-    os.environ["OPENBLAS_NUM_THREADS"] = "12"
-    os.environ["MKL_NUM_THREADS"] = "12"
-    os.environ["VECLIB_MAXIMUM_THREADS"] = "12"
-    os.environ["NUMEXPR_NUM_THREADS"] = "12"
+    os.environ["OMP_NUM_THREADS"] = "4"
+    os.environ["OPENBLAS_NUM_THREADS"] = "4"
+    os.environ["MKL_NUM_THREADS"] = "4"
+    os.environ["VECLIB_MAXIMUM_THREADS"] = "4"
+    os.environ["NUMEXPR_NUM_THREADS"] = "4"
 
     model = net.SimpleView(n_classes=n_class, n_views=n_view)
-    model.load_state_dict(torch.load(model_path))
+    model.load_state_dict(torch.load(model_path, map_location="cpu"))
     device = (
         "cuda"
         if torch.cuda.is_available()
@@ -237,3 +237,4 @@ if __name__ == "__main__":
     print(f"End time: {t1.strftime('%Y-%m-%d %H:%M:%S')}")
     # print elapsed time
     print(f"Elapsed time: {t1 - t0}")
+
