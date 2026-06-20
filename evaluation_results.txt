@@ -1,0 +1,42 @@
+Matched 94 trees out of 94 predictions
+Accuracy: 78.72%
+
+                       precision    recall  f1-score   support
+
+           Abies_alba       1.00      0.67      0.80         3
+       Acer_campestre       0.40      0.67      0.50         3
+  Acer_pseudoplatanus       1.00      0.50      0.67         2
+       Acer_saccharum       1.00      1.00      1.00         3
+       Betula_pendula       0.75      1.00      0.86         3
+     Carpinus_betulus       0.00      0.00      0.00         1
+     Corylus_avellana       1.00      1.00      1.00         3
+   Crataegus_monogyna       0.00      0.00      0.00         3
+   Eucalyptus_miniata       1.00      1.00      1.00         2
+   Euonymus_europaeus       0.33      0.33      0.33         3
+      Fagus_sylvatica       0.67      0.67      0.67         3
+Fraxinus_angustifolia       1.00      0.50      0.67         2
+   Fraxinus_excelsior       0.50      0.33      0.40         3
+        Larix_decidua       1.00      1.00      1.00         3
+          Picea_abies       1.00      0.67      0.80         3
+         Picea_glauca       1.00      1.00      1.00         3
+       Pinus_contorta       1.00      1.00      1.00         3
+          Pinus_nigra       1.00      0.67      0.80         3
+       Pinus_pinaster       0.75      1.00      0.86         3
+        Pinus_radiata       1.00      1.00      1.00         3
+       Pinus_resinosa       1.00      1.00      1.00         3
+     Pinus_sylvestris       0.60      1.00      0.75         3
+    Populus_deltoides       0.67      0.67      0.67         3
+  Populus_tremuloides       0.60      1.00      0.75         3
+         Prunus_avium       0.67      0.67      0.67         3
+Pseudotsuga_menziesii       1.00      1.00      1.00         3
+      Quercus_faginea       1.00      1.00      1.00         3
+         Quercus_ilex       1.00      0.67      0.80         3
+      Quercus_petraea       1.00      1.00      1.00         3
+        Quercus_robur       0.75      1.00      0.86         3
+        Quercus_rubra       1.00      1.00      1.00         3
+        Tilia_cordata       1.00      1.00      1.00         3
+         Ulmus_laevis       1.00      0.33      0.50         3
+
+             accuracy                           0.79        94
+            macro avg       0.81      0.77      0.77        94
+         weighted avg       0.82      0.79      0.78        94
