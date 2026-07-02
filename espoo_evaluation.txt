@@ -1,0 +1,19 @@
+Matched 99 trees
+Accuracy: 66.67%
+
+                       precision    recall  f1-score   support
+
+           Abies_alba       0.00      0.00      0.00         0
+       Betula_pendula       0.66      0.76      0.70        25
+     Carpinus_betulus       0.00      0.00      0.00         0
+      Fagus_sylvatica       0.00      0.00      0.00         0
+          Picea_abies       0.70      0.84      0.76        25
+       Pinus_contorta       0.00      0.00      0.00         0
+     Pinus_sylvestris       0.87      0.65      0.74        40
+Pseudotsuga_menziesii       0.00      0.00      0.00         0
+        Quercus_rubra       0.00      0.00      0.00         0
+        Tilia_cordata       0.00      0.00      0.00         9
+
+             accuracy                           0.67        99
+            macro avg       0.22      0.23      0.22        99
+         weighted avg       0.69      0.67      0.67        99
